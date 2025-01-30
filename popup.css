@@ -1,0 +1,118 @@
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
+    z-index: 1000;
+    width: 90%;
+    max-width: 500px;
+    animation: fadeIn 0.5s;
+    border: 3px solid #ff1493;
+}
+
+.love-message {
+    color: #ff0033;
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+}
+
+.love-message p {
+    margin: 15px 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ff1493;
+    font-family: Arial, sans-serif;
+}
+
+.close-btn:hover {
+    color: #ff4500;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.love-message span {
+    opacity: 0;
+    animation: fadeInChar 0.1s forwards;
+}
+
+@keyframes fadeInChar {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.love-more-btn {
+    padding: 10px 20px;
+    background: #ff1493;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.love-more-btn:hover {
+    background: #ff4500;
+    transform: scale(1.05);
+}
+
+/* Add media queries for small screens */
+@media screen and (max-width: 480px) {
+    .popup {
+        padding: 15px;
+        width: 95%;
+    }
+
+    .love-message {
+        font-size: 1em;
+        line-height: 1.4;
+    }
+
+    .love-more-btn {
+        padding: 8px 16px;
+        font-size: 1em;
+    }
+
+    .close-btn {
+        top: 5px;
+        right: 10px;
+        font-size: 20px;
+    }
+} 
