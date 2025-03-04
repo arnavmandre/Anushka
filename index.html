@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seven Months of Magic</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="background-music" preload="auto" loop>
+        <source src="assets/audio/imagine.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="play-music-button">
+        <button id="play-music" aria-label="Play Music">
+            Play Music 🎵
+        </button>
+    </div>
+
+    <div class="sound-control">
+        <button id="toggle-sound" aria-label="Toggle Sound">
+            <i class="fas fa-volume-mute" id="sound-icon"></i>
+        </button>
+    </div>
+
+    <div class="progress-indicator">
+        <div class="progress-dot active" data-index="1"></div>
+        <div class="progress-dot" data-index="2"></div>
+        <div class="progress-dot" data-index="3"></div>
+        <div class="progress-dot" data-index="4"></div>
+        <div class="progress-dot" data-index="5"></div>
+    </div>
+
+    <section id="landing-page" class="active">
+        <div class="landing-content">
+            <div class="glowing-heart"></div>
+            <h1 class="fade-in">For the one who makes my day always better</h1>
+            <button id="begin-journey" class="pulsate">Begin Our Journey</button>
+        </div>
+        <div class="floating-elements"></div>
+    </section>
+
+    <section id="poem-section">
+        <div class="poem-container">
+            <div id="poem" class="poem"></div>
+        </div>
+        <div class="floating-elements"></div>
+    </section>
+
+    <section id="choice-section">
+        <div class="choice-container">
+            <h2>Will you continue this beautiful journey with me?</h2>
+            <div class="buttons">
+                <button id="choice-yes" class="choice-button">Yes</button>
+                <button id="choice-yesss" class="choice-button">Yesss!</button>
+            </div>
+        </div>
+        <div class="floating-elements"></div>
+    </section>
+
+    <section id="celebration-section">
+        <div id="confetti-container"></div>
+        <div class="celebration-content">
+            <h1 class="celebration-text">Yippeesssssss! ❤️</h1>
+        </div>
+    </section>
+
+    <section id="message-section">
+        <div class="message-container">
+            <div class="message-border">
+                <div class="message-content">
+                    <p>Hey Anu, these past seven months with you have been nothing short of magical. Every moment, every smile, and every little thing about you i love. I am so proud of you not just for how hard you have worked, but for the amazing person you are.</p>
+                    <p>You are the most amazing person i have ever met Anu. Through every high and low, know that i will always be there for you, loving you more with each passing day. You are my happiness, my heart, my home and my forever. ❤️(P.S. I love you more & I love all the gifts you have given me soo muchh u are literally the best)</p>
+                </div>
+            </div>
+            
+            <div class="memory-gallery">
+                <h3>Our Memories Together</h3>
+                <div class="gallery-container">
+                    <div class="memory-item">
+                        <div class="memory-image" style="background-image: url('assets/images/20250126_144453.jpg')"></div>
+                        <p class="memory-caption">Our Second date ❤️</p>
+                    </div>
+                    <div class="memory-item">
+                        <div class="memory-image" style="background-image: url('assets/images/20250128_142321.jpg')"></div>
+                        <p class="memory-caption">Sun kissed</p>
+                    </div>
+                    <div class="memory-item">
+                        <div class="memory-image" style="background-image: url('assets/images/20250129_132051.jpg')"></div>
+                        <p class="memory-caption">Your Smile is soo cuteee</p>
+                    </div>
+                    <div class="memory-item">
+                        <div class="memory-image" style="background-image: url('assets/images/20250203_131901.jpg')"></div>
+                        <p class="memory-caption">You Look so Hot Omggg</p>
+                    </div>
+                    <div class="memory-item">
+                        <div class="memory-image" style="background-image: url('assets/images/20250203_132000.jpg')"></div>
+                        <p class="memory-caption">First Date</p>
+                    </div>
+                    <div class="memory-item">
+                        <div class="memory-image" style="background-image: url('assets/images/20250214_132932.jpg')"></div>
+                        <p class="memory-caption">Valentine's Day</p>
+                    </div>
+                    <div class="memory-item">
+                        <div class="memory-image" style="background-image: url('assets/images/IMG_20250228_211145_128.jpg')"></div>
+                        <p class="memory-caption">You look soo pretty omggggg</p>
+                    </div>
+                    <div class="memory-item">
+                        <div class="memory-image" style="background-image: url('assets/images/IMG-20250221-WA0007.jpg')"></div>
+                        <p class="memory-caption">Just us</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="love-counter">
+                <h3>We've been together for:</h3>
+                <div class="counter">
+                    <div class="counter-item">
+                        <span id="months">7</span>
+                        <span class="label">Months</span>
+                    </div>
+                    <div class="counter-item">
+                        <span id="days">0</span>
+                        <span class="label">Days</span>
+                    </div>
+                    <div class="counter-item">
+                        <span id="hours">12</span>
+                        <span class="label">Hours</span>
+                    </div>
+                    <div class="counter-item">
+                        <span id="minutes">31</span>
+                        <span class="label">Minutes</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="signature">
+                <p>With all my love,</p>
+                <h2>Arnav</h2>
+                <p class="surprise-note">I love More Hehe </p>
+            </div>
+            
+            <button id="replay-button" class="replay">Replay Our Journey</button>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html> 
