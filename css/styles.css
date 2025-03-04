@@ -361,8 +361,8 @@ section.active {
 
 .gallery-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 25px;
     margin-top: 20px;
 }
 
@@ -379,9 +379,11 @@ section.active {
 }
 
 .memory-image {
-    height: 150px;
-    background-size: cover;
+    height: 240px;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
 }
 
 .memory-caption {
@@ -504,11 +506,11 @@ section.active {
     }
     
     .gallery-container {
-        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
     
     .memory-image {
-        height: 120px;
+        height: 180px;
     }
     
     .signature h2 {
@@ -537,12 +539,13 @@ section.active {
     }
     
     .gallery-container {
-        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-        gap: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 15px;
     }
     
     .memory-image {
-        height: 100px;
+        height: 160px;
+        background-size: contain;
     }
     
     .memory-caption {
@@ -600,7 +603,7 @@ section.active {
     }
     
     .gallery-container {
-        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     }
     
     .buttons {
@@ -610,6 +613,10 @@ section.active {
     .choice-button {
         padding: 0.6rem 1.5rem;
         font-size: 1rem;
+    }
+    
+    .memory-image {
+        height: 150px;
     }
 }
 
